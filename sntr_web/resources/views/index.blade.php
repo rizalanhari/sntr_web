@@ -18,7 +18,7 @@
 
     <!-- Custom styles for this template -->
     <link href="{{asset('assets/css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{asset('asset/css/elusive-webfont.css') }}">
+    <link rel="stylesheet" href="{{asset('assets/css/elusive-webfont.css') }}">
     <link href="{{asset('assets/css/animate.css') }}" rel="stylesheet">
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
@@ -164,7 +164,7 @@
 				<hr class="fade-down title-mb">
 				<div class="col-md-4 ">
 					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
-						<img class="img team-image" src="images/team01.jpg" alt="">
+						<img class="img team-image" src="{{asset('assets/images/team01.jpg') }}" alt="">
 						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
 						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
 						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
@@ -177,7 +177,7 @@
 				
 				<div class="col-md-4">
 					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
-						<img class="img team-image" src="images/team02.jpg" alt="">
+						<img class="img team-image" src="{{asset('assets/images/team02.jpg') }}" alt="">
 						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
 						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
 						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
@@ -190,7 +190,7 @@
 				
 				<div class="col-md-4">
 					<div class="col-md-3 col-sm-3 col-xs-3 fade-down team-image-wrapper">
-						<img class="img team-image" src="images/team03.jpg" alt="">
+						<img class="img team-image" src="{{asset('assets/images/team03.jpg') }}" alt="">
 						<a href="#" class="team-social twitter"><i class="el-icon-twitter"></i></a>
 						<a href="#" class="team-social facebook"><i class="el-icon-facebook"></i></a>
 						<a href="#" class="team-social flickr"><i class="el-icon-flickr"></i></a>
@@ -209,7 +209,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 centered fade-up">
-						<img class="img-responsive" src="images/macbook.png" align="">
+						<img class="img-responsive" src="{{asset('assets/images/macbook.png') }}" align="">
 					</div>
 					<div class="col-md-6 fade-down">
 						<h2>Could You Be The Next Delta Ninja?</h2>
@@ -246,11 +246,11 @@
 					<div class="fade-up col-md-4 ">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio01.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT ONE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -260,11 +260,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio02.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT TWO</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -274,11 +274,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio03.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT THREE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -288,11 +288,11 @@
 					<div class="fade-up col-md-4 ">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio04.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio04.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT FOUR</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -302,11 +302,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio05.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT FIVE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -316,11 +316,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio06.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT SIX</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -330,11 +330,11 @@
 					<div class="fade-up col-md-4 ">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio01.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio01.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT SEVEN</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -344,11 +344,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio02.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio02.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT EIGHT</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -358,11 +358,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio03.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio03.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT NINE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -376,7 +376,7 @@
 								<figcaption>
 									<h5>PROJECT TEN</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -386,11 +386,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio05.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio05.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT ELEVEN</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -400,11 +400,11 @@
 					<div class="fade-up col-md-4">
 				    	<div class="grid mask">
 							<figure>
-								<img class="img-responsive" src="images/folio06.jpg" alt="">
+								<img class="img-responsive" src="{{asset('assets/images/folio06.jpg') }}" alt="">
 								<figcaption>
 									<h5>PROJECT TWELVE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="images/folio01.jpg" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -437,11 +437,11 @@
 
 				<div class="col-md-6 blog-bg">
 					<div class="img-wrapper">
-						<img class="img fade-down" src="images/bg1.jpg">
+						<img class="img fade-down" src="{{asset('assets/images/bg1.jpg') }}">
 						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
-						<img class="img" src="images/team01.jpg">
+						<img class="img" src="{{asset('assets/images/team01.jpg') }}">
 						<h4>John Smith</h4>
 						<h5>Published April 7th.</h5>
 					</div>
@@ -455,11 +455,11 @@
 
 				<div class="col-md-6 blog-bg">
 					<div class="img-wrapper">
-						<img class="img fade-down" src="images/bg2.jpg">
+						<img class="img fade-down" src="{{asset('assets/images/bg2.jpg') }}">
 						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
-						<img class="img" src="images/team02.jpg">
+						<img class="img" src="{{asset('assets/images/team02.jpg') }}">
 						<h4>Dan Jones</h4>
 						<h5>Published April 4th.</h5>
 					</div>
@@ -473,11 +473,11 @@
 
 				<div class="col-md-6 blog-bg">
 					<div class="img-wrapper">
-						<img class="img fade-down" src="images/bg3.jpg">
+						<img class="img fade-down" src="{{asset('assets/images/bg3.jpg') }}">
 						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
-						<img class="img" src="images/team03.jpg">
+						<img class="img" src="{{asset('assets/images/team03.jpg') }}">
 						<h4>John Smith</h4>
 						<h5>Published April 2nd.</h5>
 					</div>
@@ -491,11 +491,11 @@
 
 				<div class="col-md-6 blog-bg">
 					<div class="img-wrapper">
-						<img class="img fade-down" src="images/bg4.jpg">
+						<img class="img fade-down" src="{{asset('assets/images/bg4.jpg') }}">
 						<div class="img-mask"><a href="single-post.htm" class="mask-icon"><i class="el-icon-link"></i></a></div>
 					</div>
 					<div class="col-md-2 col-sm-2 col-xs-2 blog-meta fade-down">
-						<img class="img" src="images/team04.jpg">
+						<img class="img" src="{{asset('assets/images/team03.jpg') }}">
 						<h4>John Smith</h4>
 						<h5>Published April 1st.</h5>
 					</div>
