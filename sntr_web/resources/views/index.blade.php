@@ -66,9 +66,9 @@
 		<!-- ==== HEADERWRAP ==== -->
 	    <div id="headerwrap" id="home" name="home">
 			<header class="clearfix">
-	  		 		<h1 class="animated bounceIn">Template Stock</h1>
-	  		 		<p class="animated slideInLeft">Let Us Help You Be Something Awesome.</p>
-	  		 		<p class="animated slideInRight">We Are Here For You.</p>
+	  		 		<h1 class="animated bounceIn">Jombang x Santri</h1>
+	  		 		<p class="animated slideInLeft">Become santri in Jombang City.</p>
+	  		 		<p class="animated slideInRight">Are you ready?.</p>
 	  		 		<a href="#about" class="btn homebtn smoothScroll">Learn More <i class="el-icon-chevron-down homeicon"></i></a>
 	  		</header>	    
 	    </div><!-- /headerwrap -->
@@ -264,7 +264,7 @@
 								<figcaption>
 									<h5>PROJECT TWO</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio02.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -278,7 +278,7 @@
 								<figcaption>
 									<h5>PROJECT THREE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio03.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -292,7 +292,7 @@
 								<figcaption>
 									<h5>PROJECT FOUR</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio04.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -306,7 +306,7 @@
 								<figcaption>
 									<h5>PROJECT FIVE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio05.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -320,7 +320,7 @@
 								<figcaption>
 									<h5>PROJECT SIX</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio06.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -348,7 +348,7 @@
 								<figcaption>
 									<h5>PROJECT EIGHT</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio02.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -362,7 +362,7 @@
 								<figcaption>
 									<h5>PROJECT NINE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio03.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -376,7 +376,7 @@
 								<figcaption>
 									<h5>PROJECT TEN</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio04.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -390,7 +390,7 @@
 								<figcaption>
 									<h5>PROJECT ELEVEN</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio05.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
@@ -404,7 +404,7 @@
 								<figcaption>
 									<h5>PROJECT TWELVE</h5>
 									<a href="single-project.html" class="btn btn-primary btn-lg"><i class="el-icon-link"></i></a>
-									<a href="{{asset('assets/images/folio01.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
+									<a href="{{asset('assets/images/folio06.jpg') }}" class="btn btn-primary btn-lg launch-lb"><i class="el-icon-zoom-in"></i></a>
 								</figcaption><!-- /figcaption -->
 							</figure><!-- /figure -->
 				    	</div><!-- /grid-mask -->
