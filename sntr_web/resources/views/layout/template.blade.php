@@ -16,7 +16,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('assets/css/bootstrap.css') }}" rel="stylesheet">
-
+    <link href="{{asset('assets/css/bootstrap-table.min.css') }}" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="{{asset('assets/css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/elusive-webfont.css') }}">
@@ -25,6 +25,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
 
     <script src="{{asset('assets/js/jquery.min.js') }}"></script>
+    <script src="{{asset('assets/js/bootstrap-table.min.js') }}"></script>
     <script type="text/javascript" src="{{asset('assets/js/modernizr.custom.js') }}"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -58,6 +59,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Latest compiled and minified CSS -->
+  
     <script type="text/javascript" src="{{asset('assets/js/bootstrap.js') }}"></script>
     <script type="text/javascript" src="{{asset('assets/js/plugins.js') }}"></script>
     <script type="text/javascript" src="{{asset('assets/js/init.js') }}"></script>

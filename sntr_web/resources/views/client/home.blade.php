@@ -12,7 +12,7 @@
 
 <!--  SERVICES -->
 <div class="greywrap">
-	<div class="container" id="about" name="about">
+	<div class="container" id="home" name="about">
 		<div class="row">
 			<div class="col-md-4 col-sm-4 col-xs-6 callout">
 				<div class="col-md-3 img-circle">
