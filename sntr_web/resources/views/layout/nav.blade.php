@@ -3,15 +3,18 @@
     <div class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <i class="el-icon-lines"></i>
-                </button>
-                <a class="navbar-brand hidden-xs hidden-sm " href="#home">
-                    <img src="{{asset('assets/images/logo-jombang.png')}}" class="navbar-brand hidden-xs hidden-sm navbarhiddencustom " width="30" height="30">
-                </a>
-            <div>
-                <h1>Pesantren</h1>
-            </div>
+                <div class="col-sm-2">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <i class="el-icon-lines"></i>
+                    </button>
+                    <a class="navbar-brand hidden-xs hidden-sm " href="#home">
+                        <img src="{{asset('assets/images/logo-jombang.png')}}" class="navbar-brand hidden-xs hidden-sm navbarhiddencustom " width="30" height="30">
+                    </a>
+                </div>
+                <div class="navbar-brand col-sm-4">
+                    <h1>Pesantren</h1>
+                </div>
+
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
