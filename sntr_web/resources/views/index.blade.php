@@ -11,7 +11,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Solitude Free Responsive Template | Template Stock</title>
+    <title>@yield('title')</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('assets/css/bootstrap.css') }}" rel="stylesheet">
