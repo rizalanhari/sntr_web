@@ -17,6 +17,11 @@ body {
     line-height: 1.4;
 }
 
+.navbarhiddencustom {
+    margin-top: 13px;
+    height: 45px;
+  }
+
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.

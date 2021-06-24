@@ -6,9 +6,12 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <i class="el-icon-lines"></i>
                 </button>
-                <a class="navbar-brand hidden-xs hidden-sm" href="#home">
-                    <h1> Solitude</h1>
+                <a class="navbar-brand hidden-xs hidden-sm " href="#home">
+                    <img src="{{asset('assets/images/logo-jombang.png')}}" class="navbar-brand hidden-xs hidden-sm navbarhiddencustom " width="30" height="30">
                 </a>
+            <div>
+                <h1>Pesantren</h1>
+            </div>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
