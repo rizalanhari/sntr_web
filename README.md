@@ -1,2 +1,2 @@
 # sntr_web
-Assalamualaikum
+test
