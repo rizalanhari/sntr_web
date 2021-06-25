@@ -30,17 +30,15 @@ Route::get('/admin', function () {
 
 Route::get('/admin/form', function () {
     return view('admin.general');
-<<<<<<< Updated upstream
-});  
-Route::get('/pondok', function () {
-    return view('client.pondok');
-});
-=======
-});
 
 Route::get('/admin/form', function () {
     return view('admin.general');
 });
 
+  
 Route::get('/testdata', [testdata::class, 'show']);
->>>>>>> Stashed changes
+});  
+
+Route::get('/pondok', function () {
+    return view('client.pondok');
+});
