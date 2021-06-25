@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\testdata;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +30,15 @@ Route::get('/admin', function () {
 
 Route::get('/admin/form', function () {
     return view('admin.general');
+
+Route::get('/admin/form', function () {
+    return view('admin.general');
+});
+
+  
+Route::get('/testdata', [testdata::class, 'show']);
 });  
+
 Route::get('/pondok', function () {
     return view('client.pondok');
 });
