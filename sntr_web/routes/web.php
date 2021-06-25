@@ -30,4 +30,7 @@ Route::get('/admin', function () {
 
 Route::get('/admin/form', function () {
     return view('admin.general');
+});  
+Route::get('/pondok', function () {
+    return view('client.pondok');
 });
