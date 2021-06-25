@@ -19,9 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('client.home');
 });
+
+Route::get('/pondok', function () {
+    return view('client.pondok');
+});
+
 Route::get('/admin', function () {
     return view('admin.admin');
 });
-Route::get('/pondok', function () {
-    return view('client.pondok');
+
+Route::get('/admin/form', function () {
+    return view('admin.general');
 });
