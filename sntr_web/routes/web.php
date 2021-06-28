@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testdata;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,32 +16,32 @@ use App\Http\Controllers\testdata;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-Route::get('/', function () {
-    return view('client.home');
+//Routing Admin
+Route::get('login', [AuthController::class, 'showFormLogin'])->name('login');
+Route::post('login', [AuthController::class, 'login']);
+Route::get('register', [AuthController::class, 'showFormRegister'])->name(
+    'register'
+);
+Route::post('register', [AuthController::class, 'register']);
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('home', [AdminController::class, 'index'])->name('home');
+    Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/admin/form', function () {
+        return view('admin.general');
+    });
 });
+
+//Routing PONDOK
 
 Route::get('/pondok', function () {
     return view('client.pondok');
 });
-
-Route::get('/admin', function () {
-    return view('admin.admin');
-});
-
-Route::get('/admin/form', function () {
-    return view('admin.general');
-
-Route::get('/admin/form', function () {
-    return view('admin.general');
-});
-
-  
 Route::get('/testdata', [testdata::class, 'show']);
-});  
 
+Route::get('/', function () {
+    return view('client.home');
+});
 Route::get('/pondok', function () {
     return view('client.pondok');
 });
