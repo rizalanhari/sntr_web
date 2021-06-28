@@ -42,6 +42,7 @@ Route::get('/testdata', [testdata::class, 'show']);
 Route::get('/', function () {
     return view('client.home');
 });
+
 Route::get('/pondok', function () {
     return view('client.pondok');
 });
