@@ -95,30 +95,38 @@
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-sm-6 col-lg-4">
-					<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/ti.jpg" style="height: 231.844px;">
-						<div class="card-body info">
-							<h4 class="card-title" style="font-family: Alatsi, sans-serif;">John Smith</h4>
-							<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="/detail" style="text-decoration: none; color:black">
+						<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/ti.jpg" style="height: 231.844px;">
+							<div class="card-body info">
+								<h4 class="card-title" style="font-family: Alatsi, sans-serif;">John Smith</h4>
+								<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
 						</div>
-					</div>
+					</a>
 				</div>
 				<div class="col-sm-6 col-lg-4">
-					<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/du.jpg" style="height: 231.844px;">
-						<div class="card-body info">
-							<h4 class="card-title" style="font-family: Alatsi, sans-serif;">Robert Downturn</h4>
-							<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					<a href="/detail" style="text-decoration: none; color:black">
+						<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/du.jpg" style="height: 231.844px;">
+							<div class="card-body info">
+								<h4 class="card-title" style="font-family: Alatsi, sans-serif;">Robert Downturn</h4>
+								<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
 						</div>
-					</div>
+					</a>
+
 				</div>
 				<div class="col-sm-6 col-lg-4">
-					<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/du.jpg" style="height: 231.844px;">
-						<div class="card-body info">
-							<h4 class="card-title" style="font-family: Alatsi, sans-serif;">Ally Sanders</h4>
-							<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-						</div>
-					</div>
+					<a href="/detail" style="text-decoration: none; color:black">
+						<div class="card text-center clean-card"><img class="card-img-top w-100 d-block" src="assets/img/avatars/du.jpg" style="height: 231.844px;">
+							<div class="card-body info">
+								<h4 class="card-title" style="font-family: Alatsi, sans-serif;">Ally Sanders</h4>
+								<p class="card-text" style="font-family: Almendra, serif;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+					</a>
+
 				</div>
 			</div>
+		</div>
 		</div>
 	</section>
 </main>
