@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
+use App\Models\pondok;
+
 class testdata extends Controller
 {
     /**
@@ -14,7 +16,6 @@ class testdata extends Controller
      */
     public function index()
     {
-        //
     }
 
     /**
@@ -46,9 +47,9 @@ class testdata extends Controller
      */
     public function show()
     {
-        $users = DB::select('select * from pondok');
-        foreach ($users as $user) {
-            echo $user->name;
+        dd(pondok::all());
+        foreach (pondok::all() as $pondok) {
+            echo $pondok->name;
         }
     }
 
