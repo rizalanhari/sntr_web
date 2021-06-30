@@ -1,33 +1,10 @@
-<div id="navbar-main">
-    <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <div class="col-sm-2">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <i class="el-icon-lines"></i>
-                    </button>
-                    <a class="navbar-brand hidden-xs hidden-sm " href="#home">
-                        <img src="{{asset('assets/images/logo-jombang.png')}}" class="navbar-brand hidden-xs hidden-sm navbarhiddencustom " width="30" height="30">
-                    </a>
-                </div>
-                <div class="navbar-brand col-sm-4">
-                    <h1>Pesantren</h1>
-                </div>
-
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="/" class="">Home</a></li>
-                    <li><a href="#about" class="">About</a></li>
-                    <li><a href="/pondok" class="smoothScroll">Pondok</a></li>
-                 <!--    <li><a href="#team" class="smoothScroll">Team</a></li>
-                    <li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
-                    <li><a href="#blog" class="smoothScroll">Blog</a></li>
-                    <li><a href="#contact" class="smoothScroll">Contact</a></li> -->
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+    <div class="container"><img src="{{asset('assets/img/logo-jombang.png')}}" style="width: 50px;"><a class="navbar-brand logo" href="#" style="margin: 15px;margin-left: 25px;font-family: Alatsi, sans-serif;">Pesantren</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" data-aos="fade" id="navcol-1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="rubberBand" href="/" style="font-family: Alatsi, sans-serif;">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-bss-hover-animate="rubberBand" href="/pondok" style="font-family: Alatsi, sans-serif;">pondok</a></li>
+            </ul>
         </div>
     </div>
-</div>
+</nav>

@@ -46,3 +46,7 @@ Route::get('/', function () {
 Route::get('/pondok', function () {
     return view('client.pondok');
 });
+
+Route::get('/detail', function () {
+    return view('client.detail');
+});
