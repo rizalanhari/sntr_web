@@ -1,4 +1,7 @@
 @extends('layout.template')
+
+@section('title','Detail Pondok')
+
 @section('content')
 <main class="page landing-page" style="background: rgb(246,246,246);">
     <section style="margin-top: 30px;background: rgb(246,246,246);">
@@ -12,30 +15,33 @@
                         <tr></tr>
                     </thead>
                     <tbody>
+                        @foreach($pondok as $item)
                         <tr>
                             <td style="width: 300px;">Nama Pondok</td>
-                            <td>PP 01</td>
+                            <td>{{$item->nama}}</td>
                         </tr>
                         <tr>
                             <td>Alamat</td>
-                            <td>Jombang gaes</td>
+                            <td>{{$item->alamat}}</td>
                         </tr>
                         <tr>
                             <td>Jumlah Pengajar</td>
-                            <td>4993</td>
+                            <td>{{$pengajarCount}}</td>
                         </tr>
                         <tr>
                             <td>Jumlah Santri</td>
-                            <td>29939</td>
+                            <td>{{$santriCount}}</td>
                         </tr>
                         <tr>
                             <td>No Telpon</td>
-                            <td>0821232745</td>
+                            <td>{{$item->no_telp}}</td>
                         </tr>
                         <tr>
                             <td>Web</td>
-                            <td><a href="https://youtu.be/KHTemEpkwyI?list=RDKHTemEpkwyI"><span style="text-decoration: underline;">https://youtu.be/KHTemEpkwyI?list=RDKHTemEpkwyI</span></a></td>
+                            <td><a href="{{$item->web}}"><span style="text-decoration: underline;">{{$item->web}}</span></a></td>
                         </tr>
+                        @endforeach
+
                     </tbody>
                 </table>
             </div>

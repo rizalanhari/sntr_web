@@ -87,7 +87,7 @@ class AuthController extends Controller
             'email.unique' => 'Email sudah terdaftar',
             'password.required' => 'Password wajib diisi',
             'password.confirmed' =>
-                'Password tidak sama dengan konfirmasi password',
+            'Password tidak sama dengan konfirmasi password',
         ];
 
         $validator = Validator::make($request->all(), $rules, $messages);

@@ -1,4 +1,5 @@
 @extends('layout.template')
+@section('title','Data Pondok')
 @section('content')
 
 <main class="page landing-page" style="background: rgb(246,246,246);">
@@ -34,38 +35,16 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach($pondok as $item)
                             <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td><a class="btn bg-success" href="/detail" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
+                                <td>{{$loop->iteration}}</td>
+                                <td>{{$item->nama}}</td>
+                                <td>{{$item->alamat}}</td>
+                                <td>{{$item->no_telp}}</td>
+                                <td>{{$item->web}}</td>
+                                <td><a class="btn bg-success" href="{{url('/detail/'.$item->idpondok)}}" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
                             </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td><a class="btn bg-success" href="/detail" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td><a class="btn bg-success" href="/detail" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
-                            </tr>
-                            <tr>
-                                <td>Cell 1</td>
-                                <td>Cell 2</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td>Cell 1</td>
-                                <td><a class="btn bg-success" href="/detail" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
