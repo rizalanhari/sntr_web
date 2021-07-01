@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Models\pondok;
 use App\Models\Pengajar;
 use App\Models\santri;
+
 
 class PondokController extends Controller
 {
@@ -31,6 +33,7 @@ class PondokController extends Controller
         // return $pengajarCount;
         // return 'detil' . $id;
         return view('client.detail', compact('pondok', 'pengajarCount', 'santriCount'));
+
     }
 
     /**
@@ -51,7 +54,9 @@ class PondokController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        dd($request->all());
+
     }
 
     /**
