@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testdata;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PondokController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/form', function () {
         return view('admin.general');
     });
+    Route::post('tambahdatapondok', [PondokController::class, 'store'])->name('admin.tambah.pondok');
 });
 
 //Routing PONDOK
