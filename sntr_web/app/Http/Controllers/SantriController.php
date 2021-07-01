@@ -4,11 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\pondok;
-use App\Models\Pengajar;
-use App\Models\santri;
-
-class PondokController extends Controller
+class SantriController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,29 +13,12 @@ class PondokController extends Controller
      */
     public function index()
     {
-        $pondok = pondok::all();
-        // return $pondok;
-        return view('client.pondok', compact('pondok'));
+        //
     }
 
     public function callform()
     {
-        return view('admin.tambahpondok');
-    }
-
-    public function detil($id)
-    {
-        $pondok = pondok::where('idpondok', $id)->get();
-        $pengajar = Pengajar::where('pondok_idpondok', $id)->get();
-        $santri = santri::where('pondok_idpondok', $id)->get();
-        $pengajarCount = $pengajar->count();
-        $santriCount = $santri->count();
-        // return $pengajarCount;
-        // return 'detil' . $id;
-        return view(
-            'client.detail',
-            compact('pondok', 'pengajarCount', 'santriCount')
-        );
+        return view('admin.tambahsantri');
     }
 
     /**

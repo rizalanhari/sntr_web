@@ -5,6 +5,8 @@ use App\Http\Controllers\testdata;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PondokController;
+use App\Http\Controllers\PengajarController;
+use App\Http\Controllers\SantriController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,14 +30,34 @@ Route::post('register', [AuthController::class, 'register']);
 Route::group(['middleware' => 'auth'], function () {
     Route::get('home', [AdminController::class, 'index'])->name('home');
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
-    Route::get('/admin/form', function () {
-        return view('admin.general');
-    });
-    Route::post('tambahdatapondok', [PondokController::class, 'store'])->name('admin.tambah.pondok');
+
+    //pondok routing
+    Route::get('formtambahpondok', [PondokController::class, 'callform'])->name(
+        'admin.form.tambah.pondok'
+    );
+    Route::post('storepondok', [PondokController::class, 'store'])->name(
+        'admin.store.tambah.pondok'
+    );
+
+    //pengajar routing
+    Route::get('formtambahpengajar', [
+        PengajarController::class,
+        'callform',
+    ])->name('admin.form.tambah.pengajar');
+    Route::post('storepengajar', [PengajarController::class, 'store'])->name(
+        'admin.store.tambah.pengajar'
+    );
+
+    //santri routing
+    Route::get('formtambahsantri', [SantriController::class, 'callform'])->name(
+        'admin.form.tambah.santri'
+    );
+    Route::post('storesantri', [SantriController::class, 'store'])->name(
+        'admin.store.tambah.santri'
+    );
 });
 
 //Routing PONDOK
-
 
 Route::get('/testdata', [testdata::class, 'show']);
 

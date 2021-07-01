@@ -13,26 +13,26 @@
           </div>
           <!-- /.card-header -->
           <!-- form start -->
-          <form method="post" action="{{ route('admin.tambah.pondok') }}">
-            {!! csrf_field !!}}
+          <form method="post" action="{{ route('admin.store.tambah.pondok') }}">
+            @csrf
             <div class="card-body">
               <div class="form-group">
                 <label for="nama">Nama Pondok</label>
-                <input type="text" class="form-control" id="namapondok" placeholder="Masukkan Nama Pondok">
+                <input type="text" class="form-control" id="namapondok" name="test" placeholder="Masukkan Nama Pondok">
 
                 <div class="form-group">
                   <label for="Alamat">Alamat</label>
-                  <input type="text" class="form-control" id="alamatpondok" placeholder="Masukkan Alamat Pondok">
+                  <input type="text" class="form-control" id="alamatpondok" name="alamatpondok" placeholder="Masukkan Alamat Pondok">
 
                   <div class="form-group">
                     <label for="No Telfon">No Telfon</label>
-                    <input type="text" class="form-control" id="notelfon" placeholder="Masukkan No Telepon">
+                    <input type="text" class="form-control" id="notelfon" name="notelfon" placeholder="Masukkan No Telepon">
                   </div>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
                         <label for="Web">Web</label>
-                        <input type="text" class="form-control" id="webpondok" placeholder="Masukkan Alamat Web Pondok">
+                        <input type="text" class="form-control" id="webpondok" name="webpondok" placeholder="Masukkan Alamat Web Pondok">
                       </div>
                     </div>
                     <div class="col-md-6">
@@ -42,9 +42,6 @@
                           <div class="custom-file">
                             <input type="file" class="custom-file-input" id="gambarpondok">
                             <label class="custom-file-label" for="gambarpondok">Choose file</label>
-                          </div>
-                          <div class="input-group-append">
-                            <span class="input-group-text">Upload</span>
                           </div>
                         </div>
                       </div>
@@ -87,10 +84,13 @@
                                       onIdlePositionView.innerHTML = location.lat + ',' + location.lng;
 
                                       const input = document.querySelector('input.longitudepondok');
-                                      input.value = location.lat;
+                                      input.value = location.lng;
+                                      const input2 = document.querySelector('input.latitudepondok');
+                                      input2.value = location.lat;
                                     });
                                   </script>
-                                  <input class="longitudepondok" type="hidden" id="longitude">
+                                  <input class="longitudepondok" type="hidden" id="longitude" name="longitudepondok">
+                                  <input class="latitudepondok" type="hidden" id="latitude" name="latitudeepondok">
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
