@@ -19,8 +19,10 @@ class PondokController extends Controller
     public function index()
     {
         $pondok = pondok::all();
+        $pengajar = pengajar::all();
+        $santri = santri::all();
         // return $pondok;
-        return view('client.pondok', compact('pondok'));
+        return view('client.pondok', compact('pondok', 'pengajar', 'santri'));
     }
 
     public function detil($id)
@@ -33,7 +35,6 @@ class PondokController extends Controller
         // return $pengajarCount;
         // return 'detil' . $id;
         return view('client.detail', compact('pondok', 'pengajarCount', 'santriCount'));
-
     }
 
     /**
@@ -56,7 +57,6 @@ class PondokController extends Controller
     {
 
         dd($request->all());
-
     }
 
     /**

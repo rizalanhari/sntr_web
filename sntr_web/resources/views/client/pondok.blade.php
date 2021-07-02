@@ -36,12 +36,30 @@
                         </thead>
                         <tbody>
                             @foreach($pondok as $item)
+                            <?php
+                            $jumlah = 0;
+                            $jumlah2 = 0;
+                            ?>
                             <tr>
                                 <td>{{$loop->iteration}}</td>
                                 <td>{{$item->nama}}</td>
                                 <td>{{$item->alamat}}</td>
-                                <td>{{$item->no_telp}}</td>
-                                <td>{{$item->web}}</td>
+                                @foreach($santri as $item2)
+                                @if($item2->pondok_idpondok == $item->idpondok)
+                                <?php
+                                $jumlah += 1;
+                                ?>
+                                @endif
+                                @endforeach
+                                <td>{{$jumlah}}</td>
+                                @foreach($pengajar as $item3)
+                                @if($item3->pondok_idpondok == $item->idpondok)
+                                <?php
+                                $jumlah2 += 1;
+                                ?>
+                                @endif
+                                @endforeach
+                                <td>{{$jumlah2}}</td>
                                 <td><a class="btn bg-success" href="{{url('/detail/'.$item->idpondok)}}" style="color: rgb(255,255,255);background: rgba(0,119,26,0.8509803921568627);">Info</a></td>
                             </tr>
                             @endforeach
