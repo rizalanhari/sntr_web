@@ -21,8 +21,11 @@ class PondokController extends Controller
         $pondok = pondok::all();
         $pengajar = pengajar::all();
         $santri = santri::all();
+        $pondokCount = $pondok->count();
+        $pengajarCount = $pengajar->count();
+        $santriCount = $santri->count();
         // return $pondok;
-        return view('client.pondok', compact('pondok', 'pengajar', 'santri'));
+        return view('client.pondok', compact('pondok', 'pengajar', 'santri', 'pengajarCount', 'santriCount', 'pondokCount'));
     }
 
     public function detil($id)
