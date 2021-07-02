@@ -1,5 +1,7 @@
 @extends('layout.template')
+
 @section('title','Detail Pondok')
+
 @section('content')
 <main class="page landing-page" style="background: rgb(246,246,246);">
     <section style="margin-top: 30px;background: rgb(246,246,246);">
@@ -39,6 +41,7 @@
                             <td><a href="{{$item->web}}"><span style="text-decoration: underline;">{{$item->web}}</span></a></td>
                         </tr>
                         @endforeach
+
                     </tbody>
                 </table>
             </div>

@@ -33,6 +33,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin/form', function () {
         return view('admin.general');
     });
+    Route::post('tambahdatapondok', [PondokController::class, 'store'])->name('admin.tambah.pondok');
 });
 
 //Routing PONDOK
@@ -44,6 +45,10 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/pondok', [PondokController::class, 'index']);
 Route::get('/detail/{id}', [PondokController::class, 'detil']);
+
+Route::get('/detail', function () {
+    return view('client.detail');
+});
 
 Route::get('/detail', function () {
     return view('client.detail');
