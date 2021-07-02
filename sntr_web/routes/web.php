@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\testdata;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PondokController;
+use App\Http\Controllers\HomeControllerr;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,9 +40,7 @@ Route::group(['middleware' => 'auth'], function () {
 
 Route::get('/testdata', [testdata::class, 'show']);
 
-Route::get('/', function () {
-    return view('client.home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/pondok', [PondokController::class, 'index']);
 Route::get('/detail/{id}', [PondokController::class, 'detil']);

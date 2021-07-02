@@ -7,7 +7,8 @@ use App\Models\pondok;
 use App\Models\pengajar;
 use App\Models\santri;
 
-class PondokController extends Controller
+
+class HomeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,21 +17,15 @@ class PondokController extends Controller
      */
     public function index()
     {
+        //
         $pondok = pondok::all();
-        // return $pondok;
-        return view('client.pondok', compact('pondok'));
-    }
+        $pengajar = pengajar::all();
+        $santri = santri::all();
 
-    public function detil($id)
-    {
-        $pondok = pondok::where('idpondok', $id)->get();
-        $pengajar = pengajar::where('pondok_idpondok', $id)->get();
-        $santri = santri::where('pondok_idpondok', $id)->get();
+        $pondokCount = $pondok->count();
         $pengajarCount = $pengajar->count();
         $santriCount = $santri->count();
-        // return $pengajarCount;
-        // return 'detil' . $id;
-        return view('client.detail', compact('pondok', 'pengajarCount', 'santriCount'));
+        return view('client.home', compact('pondokCount', 'pengajarCount', 'santriCount'));
     }
 
     /**
