@@ -59,6 +59,19 @@ Route::group(['middleware' => 'auth'], function () {
     );
 });
 
+Route::get('/datapesantren', function () {
+    return view('admin.datapesantren');
+});
+Route::get('/datapengajar', function () {
+    return view('admin.datapengajar');
+});
+Route::get('/datasantri', function () {
+    return view('admin.datasantri');
+});
+
+
+
+
 //Routing PONDOK
 
 Route::get('/testdata', [testdata::class, 'show']);

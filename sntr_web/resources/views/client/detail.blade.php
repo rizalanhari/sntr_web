@@ -51,7 +51,13 @@
         <div class="container" style="background: #ffffff;">
             <div class="block-heading" style="margin: 10px;padding-top: 30px;">
                 <h1 style="color: rgba(0,119,26,0.8509803921568627);font-family: Alatsi, sans-serif;">Peta Lokasi</h1>
-            </div><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCzrvQf-SSra0U-lJffe0mKYvO3qe5s-rs&amp;q=-7.556501120884609%2C+112.22641499724992&amp;zoom=17" width="100%" height="400"></iframe>
+
+
+            </div>
+            @foreach($pondok as $item)
+            <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/search?key=AIzaSyCzrvQf-SSra0U-lJffe0mKYvO3qe5s-rs&amp;q={{$item->lintang}}%2C+{{$item->bujur}}&amp;zoom=17" width="100%" height="400"></iframe>
+            @endforeach
+
         </div>
     </section>
 </main>
