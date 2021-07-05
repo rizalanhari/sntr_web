@@ -34,6 +34,10 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
     //pondok routing
+    Route::get('/datapesantren', [PondokController::class, 'datapondok'])->name(
+        'admin.data.alldata.pondok'
+    );
+
     Route::get('formtambahpondok', [PondokController::class, 'callform'])->name(
         'admin.form.tambah.pondok'
     );
@@ -42,6 +46,9 @@ Route::group(['middleware' => 'auth'], function () {
     );
 
     //pengajar routing
+    Route::get('/datapengajar', [PengajarController::class, 'datapengajar'])->name(
+        'admin.data.alldata.pengajar'
+    );
     Route::get('formtambahpengajar', [
         PengajarController::class,
         'callform',
@@ -51,6 +58,9 @@ Route::group(['middleware' => 'auth'], function () {
     );
 
     //santri routing
+    Route::get('/datasantri', [SantriController::class, 'datasantri'])->name(
+        'admin.data.alldata.santri'
+    );
     Route::get('formtambahsantri', [SantriController::class, 'callform'])->name(
         'admin.form.tambah.santri'
     );
@@ -59,15 +69,8 @@ Route::group(['middleware' => 'auth'], function () {
     );
 });
 
-Route::get('/datapesantren', function () {
-    return view('admin.datapesantren');
-});
-Route::get('/datapengajar', function () {
-    return view('admin.datapengajar');
-});
-Route::get('/datasantri', function () {
-    return view('admin.datasantri');
-});
+
+
 
 
 

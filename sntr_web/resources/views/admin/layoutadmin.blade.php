@@ -177,19 +177,19 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="/datapesantren" class="nav-link">
+                                    <a href="{{ route('admin.data.alldata.pondok') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Pesantren</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/datapengajar" class="nav-link">
+                                    <a href="{{ route('admin.data.alldata.pengajar') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Guru</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/datasantri" class="nav-link">
+                                    <a href="{{ route('admin.data.alldata.santri') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Data Santri</p>
                                     </a>
@@ -323,6 +323,8 @@
             });
         });
     </script>
+    <script src="{{ asset('assetsadmin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
 </body>
 
 </html>

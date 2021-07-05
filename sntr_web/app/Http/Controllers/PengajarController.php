@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class PengajarController extends Controller
@@ -15,7 +16,20 @@ class PengajarController extends Controller
     {
         //
     }
+    public function datapengajar()
+    {
+        $pengajar = DB::table('pengajar')
+            ->join('pondok', 'idpondok', '=', 'pondok_idpondok')
+            ->select('pondok.nama as nama_pondok', 'pengajar.*')
+            ->get();
 
+        return view(
+            'admin.datapengajar',
+            compact(
+                'pengajar'
+            )
+        );
+    }
     public function callform()
     {
         return view('admin.tambahpengajar');

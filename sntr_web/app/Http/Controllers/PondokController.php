@@ -42,6 +42,17 @@ class PondokController extends Controller
         return view('admin.tambahpondok');
     }
 
+    public function datapondok()
+    {
+        $pondok = pondok::all();
+        return view(
+            'admin.datapesantren',
+            compact(
+                'pondok'
+            )
+        );
+    }
+
     public function detil($id)
     {
         $pondok = pondok::where('idpondok', $id)->get();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SantriController extends Controller
 {
@@ -30,7 +31,20 @@ class SantriController extends Controller
     {
         //
     }
+    public function datasantri()
+    {
+        $santri = DB::table('santri')
+            ->join('pondok', 'idpondok', '=', 'pondok_idpondok')
+            ->select('pondok.nama as nama_pondok', 'santri.*')
+            ->get();
 
+        return view(
+            'admin.datasantri',
+            compact(
+                'santri'
+            )
+        );
+    }
     /**
      * Store a newly created resource in storage.
      *
