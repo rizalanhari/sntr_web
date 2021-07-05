@@ -24,7 +24,17 @@ class PondokController extends Controller
         $pengajarCount = $pengajar->count();
         $santriCount = $santri->count();
         // return $pondok;
-        return view('client.pondok', compact('pondok', 'pengajar', 'santri', 'pengajarCount', 'santriCount', 'pondokCount'));
+        return view(
+            'client.pondok',
+            compact(
+                'pondok',
+                'pengajar',
+                'santri',
+                'pengajarCount',
+                'santriCount',
+                'pondokCount'
+            )
+        );
     }
 
     public function callform()
@@ -46,7 +56,6 @@ class PondokController extends Controller
             'client.detail',
             compact('pondok', 'pengajarCount', 'santriCount')
         );
-
     }
 
     /**
@@ -75,17 +84,20 @@ class PondokController extends Controller
             'gambarpondok' => 'nullable|max:255',
         ]);
 
-        // dd($request->all());
         $pondok = new pondok();
-
 
         $pondok->nama = $request->namapondok;
         $pondok->alamat = $request->alamatpondok;
         $pondok->no_telp = $request->notelfon;
         $pondok->web = $request->webpondok;
+        $pondok->lintang = $request->latitudepondok;
+        $pondok->bujur = $request->longitudepondok;
 
-        $flight->save();
+        // dd($pondok->all());
 
+        $pondok->save();
+
+        return redirect()->route('home');
     }
 
     /**
