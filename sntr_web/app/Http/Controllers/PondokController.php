@@ -60,7 +60,23 @@ class PondokController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $request->validate([
+            'namapondok' => 'required|max:255',
+            'alamatpondok' => 'required|max:255',
+            'notelfon' => 'required|numeric',
+            'webpondok' => 'required|max:255',
+            'gambarpondok' => 'nullable|max:255',
+        ]);
+
+        // dd($request->all());
+        $pondok = new pondok();
+
+        $pondok->nama = $request->namapondok;
+        $pondok->alamat = $request->alamatpondok;
+        $pondok->no_telp = $request->notelfon;
+        $pondok->web = $request->webpondok;
+
+        $flight->save();
     }
 
     /**
