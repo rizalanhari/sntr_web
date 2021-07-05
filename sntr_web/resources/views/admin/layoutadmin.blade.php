@@ -146,19 +146,19 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="admin/form" class="nav-link">
+                  <a href="{{ route('admin.form.tambah.pondok') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Form Tambah Pesantren</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/advanced.html" class="nav-link">
+                  <a href="{{ route('admin.form.tambah.pengajar') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Form Tambah Guru</p>
+                    <p>Form Tambah Pengajar</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/forms/editors.html" class="nav-link">
+                  <a href="{{ route('admin.form.tambah.santri') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Form Tambah Santri</p>
                   </a>
