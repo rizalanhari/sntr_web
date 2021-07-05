@@ -8,7 +8,6 @@ use App\Models\pondok;
 use App\Models\pengajar;
 use App\Models\santri;
 
-
 class PondokController extends Controller
 {
     /**
@@ -28,6 +27,11 @@ class PondokController extends Controller
         return view('client.pondok', compact('pondok', 'pengajar', 'santri', 'pengajarCount', 'santriCount', 'pondokCount'));
     }
 
+    public function callform()
+    {
+        return view('admin.tambahpondok');
+    }
+
     public function detil($id)
     {
         $pondok = pondok::where('idpondok', $id)->get();
@@ -37,7 +41,12 @@ class PondokController extends Controller
         $santriCount = $santri->count();
         // return $pengajarCount;
         // return 'detil' . $id;
-        return view('client.detail', compact('pondok', 'pengajarCount', 'santriCount'));
+
+        return view(
+            'client.detail',
+            compact('pondok', 'pengajarCount', 'santriCount')
+        );
+
     }
 
     /**
@@ -58,8 +67,25 @@ class PondokController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'namapondok' => 'required|max:255',
+            'alamatpondok' => 'required|max:255',
+            'notelfon' => 'required|numeric',
+            'webpondok' => 'required|max:255',
+            'gambarpondok' => 'nullable|max:255',
+        ]);
 
-        dd($request->all());
+        // dd($request->all());
+        $pondok = new pondok();
+
+
+        $pondok->nama = $request->namapondok;
+        $pondok->alamat = $request->alamatpondok;
+        $pondok->no_telp = $request->notelfon;
+        $pondok->web = $request->webpondok;
+
+        $flight->save();
+
     }
 
     /**
