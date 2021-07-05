@@ -109,7 +109,7 @@
                                                                         <input class="longitudepondok" type="hidden"
                                                                             id="longitude" name="longitudepondok">
                                                                         <input class="latitudepondok" type="hidden"
-                                                                            id="latitude" name="latitudeepondok">
+                                                                            id="latitude" name="latitudepondok">
                                                                     </div>
                                                                     <div class="modal-footer">
                                                                         <button type="button" class="btn btn-default"
