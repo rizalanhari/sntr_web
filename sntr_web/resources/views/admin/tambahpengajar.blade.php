@@ -12,13 +12,22 @@
             <h3 class="card-title">Form Tambah Pengajar</h3>
           </div>
           <!-- /.card-header -->
+          @if ($errors->any())
+          <div class="alert alert-danger">
+            <ul>
+              @foreach ($errors->all() as $error)
+              <li>{{ $error }}</li>
+              @endforeach
+            </ul>
+          </div>
+          @endif
           <!-- form start -->
           <form method="post" action="{{ route('admin.store.tambah.pengajar') }}">
             @csrf
             <div class="card-body">
               <div class="form-group">
                 <label for="nama">Nama Pengajar</label>
-                <input type="text" class="form-control" id="namapengajar" name="test" placeholder="Masukkan Nama pengajar">
+                <input type="text" class="form-control" id="namapengajar" name="namapengajar" placeholder="Masukkan Nama pengajar">
 
                 <div class="form-group">
                   <label for="Alamat">Alamat</label>
@@ -29,7 +38,16 @@
                     <input type="text" class="form-control" id="notelfon" name="notelfon" placeholder="Masukkan No Telepon">
                   </div>
                 </div>
-                <!-- /.card-body -->
+
+                <!-- select -->
+                <div class="form-group">
+                  <label>Pondok</label>
+                  <select class="form-control" name='idpondok'>
+                    @foreach($pondok as $item)
+                    <option value="{{$item->idpondok}}">{{$item->nama}}</option>
+                    @endforeach
+                  </select>
+                </div>
 
                 <div class="card-footer">
                   <button type="submit" class="btn btn-primary">Submit</button>
