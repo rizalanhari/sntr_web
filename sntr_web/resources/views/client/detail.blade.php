@@ -47,6 +47,30 @@
             </div>
         </div>
     </section>
+    <section style="margin-top: 30px;background: rgb(246,246,246);">
+        <div class="container" style="padding: 30px;color: rgb(255,255,255);background: rgb(255,255,255);">
+            <div>
+                <h1 style="color: rgba(0,119,26,0.8509803921568627);font-family: Alatsi, sans-serif;text-align: center;">Jurusan</h1>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>No</tr>
+                        <tr>Jurusan</tr>
+                    </thead>
+                    <tbody>
+                        @foreach($pondok as $item)
+                        <tr>
+                            <td>{{$loop->iteration}}</td>
+                            <td>Nama Jurusan</td>
+                        </tr>
+                        @endforeach
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
     <section class="clean-block clean-info dark" style="background: rgb(246, 246, 246);margin: 20px;" href="">
         <div class="container" style="background: #ffffff;">
             <div class="block-heading" style="margin: 10px;padding-top: 30px;">
